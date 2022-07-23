@@ -1,6 +1,6 @@
 # jekyll-theme-devcarpet-01
 
-Jekyll Bootstrap 5 Template. Recommended for Jekyl + Strapi 4.
+Jekyll Bootstrap 5 Template. Recommended for Jekyll + Strapi 4.
 
 This template is my first Jekyll template and it started as modification of minima template.
 

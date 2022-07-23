@@ -1,37 +1,32 @@
 ---
 layout: default
 ---
-
-
 <div class="home album py-5 bg-light">
     <div class="container">
+        {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+        {%- endif -%}
+        {{ content }}
+        {% if site.paginate %}
+        {% assign posts = paginator.posts %}
+        {% else %}
+        {% assign posts = site.posts %}
+        {% endif %}
+        {%- if posts.size > 0 -%}
+        {%- if page.list_title -%}
+        <h2 class="post-list-heading">{{ page.list_title }}</h2>
+        {%- endif -%}
+        <!-- <ul class="post-list"> -->
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <div class="row mb-2">
 
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <!-- <ul class="post-list"> -->
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-
-          <div class="col p-4 d-flex flex-column position-static">
-        <!-- <div> -->
-
-            <!-- {% for tag in site.tags %}
+            {%- for post in posts -%}
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <!-- <div> -->
+                        <!-- {% for tag in site.tags %}
             <h3>{{ tag[0] }}</h3>
             <ul>
               {% for postt in tag[1] %}
@@ -39,54 +34,57 @@ layout: default
               {% endfor %}
             </ul>
           {% endfor %} -->
-
-
-          <!-- <div class="col p-4 d-flex flex-column position-static"> -->
-            <strong class="d-inline-block mb-2 text-primary">
-   {%- for cat in post.categories -%}
-   {{ cat }} &nbsp;
-   {%- endfor -%}</strong>   
-            <h3 class="mb-0">{{ post.title | escape }}</h3>
-            <div class="mb-1 text-muted post-meta">{{ post.date | date: date_format }}</div>
-            <p class="card-text mb-auto">{{ post.content| strip_html | truncatewords: 30  }}</p>
-            <a  class="stretched-link" href="{{ post.url | relative_url }}">Read more</a>
-          </div>
-      
-
-
-      <!-- <li> -->
-        <!-- <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <!-- <div class="col p-4 d-flex flex-column position-static"> -->
+                        <strong class="d-inline-block mb-2 text-primary">
+                            {%- for cat in post.categories -%}
+                            {{ cat }} &nbsp;
+                            {%- endfor -%}</strong>
+                        <h3 class="mb-0">{{ post.title | escape }}</h3>
+                        <div class="mb-1 text-muted post-meta">{{ post.date | date: date_format }}</div>
+                        <p class="card-text mb-auto">{{ post.content| strip_html | truncatewords: 30 }}</p>
+                        <a class="stretched-link" href="{{ post.url | relative_url }}">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <li> -->
+            <!-- <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3> -->
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+            <!-- </li> -->
+            {%- endfor -%}
+        </div>
+        <!-- </ul> -->
+        {% if site.paginate %}
+        <div class="pager">
+            <ul class="pagination">
+                {%- if paginator.previous_page %}
+                <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{
+                        paginator.previous_page }}</a></li>
+                {%- else %}
+                <li>
+                    <div class="pager-edge">•</div>
+                </li>
+                {%- endif %}
+                <li>
+                    <div class="current-page">{{ paginator.page }}</div>
+                </li>
+                {%- if paginator.next_page %}
+                <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page
+                        }}</a></li>
+                {%- else %}
+                <li>
+                    <div class="pager-edge">•</div>
+                </li>
+                {%- endif %}
+            </ul>
+        </div>
+        {%- endif %}
         {%- endif -%}
-      <!-- </li> -->
-      {%- endfor -%}
-    <!-- </ul> -->
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
-</div>
+    </div>
 </div>
