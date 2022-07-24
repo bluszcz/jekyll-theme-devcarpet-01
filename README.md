@@ -51,9 +51,19 @@ To configure footer slogan:
 devcarpet_theme:
   footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
 ```
+
+## Roadmap
+
+* [x] Social links
+* [x] Custom navbar description
+* [ ] Custom navbar links
+* [ ] Sass for Bootstrap 5 - more customization
+* [ ] Modal images
+* [ ] Support for Strapi 4
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bluszcz/jekyll-theme-devcarpet-01. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
