@@ -6,6 +6,11 @@ This template is my first Jekyll template and it started as modification of mini
 
 ![](assets/screenshot-01.png?raw=true)
 
+Template is mobile first and this is how it renders on smartphones:
+
+![](assets/screenshot-02.png?raw=true)
+
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
