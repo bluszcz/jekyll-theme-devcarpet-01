@@ -1,8 +1,8 @@
 # jekyll-theme-devcarpet-01
 
-Jekyll Bootstrap 5 Template. Recommended for Jekyll + Strapi 4.
+Jekyll Bootstrap 5 Template designed for Portfolio websites. It is being developed having in mind integration with Strapi 4.
 
-This template is my first Jekyll template and it started as modification of minima template.
+This is important to mention that this template is my first Jekyll template and it started as modification of minima template. But I think all Jekyll templates starts in this way :deer::smile:.
 
 ![](assets/screenshot-01.png?raw=true)
 
