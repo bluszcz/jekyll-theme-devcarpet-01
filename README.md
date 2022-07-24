@@ -65,6 +65,7 @@ devcarpet_theme:
 * [ ] Sass for Bootstrap 5 - more customization
 * [ ] Modal images
 * [ ] Support for Strapi 4
+* [x] Hero Banner
 
 ## Contributing
 
