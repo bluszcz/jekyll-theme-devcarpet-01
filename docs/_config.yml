@@ -35,6 +35,13 @@ plugins:
   - jekyll-seo-tag
 
 devcarpet_theme:
+  hero:
+    active: true
+    title: Responsive Bootstrap 5 Jekyll Template
+    description: Welcome in Devcparet Jekyll Theme. You can change this hero banner using _config.yml. You can also replace this image. Study _config to see which other changes could be applied.
+  footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
+  date_format: "%b %-d, %Y"
+
   social_links:
     twitter: ukata_me
     github: ukata
