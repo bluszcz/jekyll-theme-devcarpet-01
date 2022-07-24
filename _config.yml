@@ -15,15 +15,15 @@ devcarpet_theme:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
-    twitter: jekyllrb
-    github:  bluszcz
-    vimeo: devcarpet
-    facebook: jekyll
-    instagram: jekyll
-    youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
-    youtube_channel_name: DevCarpet
-    youtube: jekyll
+  # social_links:
+  #   twitter: jekyllrb
+  #   github:  bluszcz
+  #   vimeo: devcarpet
+  #   facebook: jekyll
+  #   instagram: jekyll
+  #   youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
+  #   youtube_channel_name: DevCarpet
+  #   youtube: jekyll
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

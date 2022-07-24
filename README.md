@@ -30,7 +30,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+You can configure your social network links in the `_config.yml`, following platforms are supported for now:
+
+```
+  social_links:
+    twitter: jekyllrb
+    github:  bluszcz
+    vimeo: devcarpet
+    facebook: jekyll
+    instagram: jekyll
+    youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
+    youtube_channel_name: DevCarpet
+    youtube: jekyll
+```
 
 ## Contributing
 
