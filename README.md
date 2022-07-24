@@ -6,6 +6,10 @@ This is important to mention that this template is my first Jekyll template and 
 
 ![](assets/screenshot-01.png?raw=true)
 
+With this template you can easily present your portfolio:
+
+![](assets/portfolio.png?raw=true)
+
 Template is mobile first and this is how it renders on smartphones:
 
 ![](assets/screenshot-02.png?raw=true)
@@ -68,8 +72,9 @@ devcarpet_theme:
 * [ ] Support for Strapi 4
 * [ ] Support for Strapi 4 - Modal Images using thumbs from Json
 * [ ] About page
-* [ ] Portfolio page
-* [ ] Collections
+* [x] Portfolio page
+* [x] Collections
+* [ ]
 
 ## Contributing
 
