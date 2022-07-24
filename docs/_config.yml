@@ -28,7 +28,7 @@ baseurl: "/jekyll-theme-devcarpet-01" # the subpath of your site, e.g. /blog
 url: "https://bluszcz.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: jekyll-theme-devcarpet-01
+#theme: jekyll-theme-devcarpet-01
 remote_theme: bluszcz/jekyll-theme-devcarpet-01
 plugins:
   - jekyll-feed
