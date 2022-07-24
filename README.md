@@ -33,6 +33,7 @@ Or install it yourself as:
 You can configure your social network links in the `_config.yml`, following platforms are supported for now:
 
 ```
+devcarpet_theme:
   social_links:
     twitter: jekyllrb
     github:  bluszcz
@@ -44,6 +45,12 @@ You can configure your social network links in the `_config.yml`, following plat
     youtube: jekyll
 ```
 
+To configure footer slogan:
+
+```
+devcarpet_theme:
+  footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
+```
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

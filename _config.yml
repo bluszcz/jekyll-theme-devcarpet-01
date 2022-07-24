@@ -9,9 +9,10 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+# date format, refer to https://shopify.github.io/liquid/filters/date/ 
+# if you want to customize this
 devcarpet_theme:
+  footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
