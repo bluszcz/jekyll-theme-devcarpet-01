@@ -33,6 +33,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+devcarpet_theme:
+  social_links:
+    twitter: ukata_me
+    github: ukata
+    instagram: lumraq
+    vimeo: devcarpet
+    youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
+    youtube_channel_name: DevCarpet
+
 collections:
   portfolio:
 
