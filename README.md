@@ -63,8 +63,10 @@ devcarpet_theme:
 * [x] Custom navbar description
 * [ ] Custom navbar links
 * [ ] Sass for Bootstrap 5 - more customization
-* [ ] Modal images
+* [ ] Modal images (perhaps filter?)
 * [ ] Support for Strapi 4
+* [ ] Support for Strapi 4 - Modal Images using thumbs from Json
+* [ ] About page
 * [x] Hero Banner
 
 ## Contributing
