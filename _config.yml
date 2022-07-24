@@ -9,43 +9,22 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+# date format, refer to https://shopify.github.io/liquid/filters/date/ 
+# if you want to customize this
+devcarpet_theme:
+  footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    # devto: jekyll
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-    # GitLab instances
-    # gitlab:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+  # social_links:
+  #   twitter: jekyllrb
+  #   github:  bluszcz
+  #   vimeo: devcarpet
+  #   facebook: jekyll
+  #   instagram: jekyll
+  #   youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
+  #   youtube_channel_name: DevCarpet
+  #   youtube: jekyll
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

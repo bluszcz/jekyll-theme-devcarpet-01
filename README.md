@@ -30,8 +30,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+You can configure your social network links in the `_config.yml`, following platforms are supported for now:
 
+```
+devcarpet_theme:
+  social_links:
+    twitter: jekyllrb
+    github:  bluszcz
+    vimeo: devcarpet
+    facebook: jekyll
+    instagram: jekyll
+    youtube_channel: UCH8bTGji7CZzSExtFGzvdMQ
+    youtube_channel_name: DevCarpet
+    youtube: jekyll
+```
+
+To configure footer slogan:
+
+```
+devcarpet_theme:
+  footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
+```
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
