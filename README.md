@@ -69,6 +69,7 @@ devcarpet_theme:
 * [ ] Support for Strapi 4 - Modal Images using thumbs from Json
 * [ ] About page
 * [ ] Portfolio page
+* [ ] Collections
 
 ## Contributing
 

@@ -38,6 +38,9 @@ devcarpet_theme:
 # Build settings
 theme: jekyll-theme-devcarpet-01
 
+collections:
+  portfolio:
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
