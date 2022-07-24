@@ -57,17 +57,18 @@ devcarpet_theme:
   footer_slogan: Done with the help of <a href="https://github.com/bluszcz/jekyll-theme-devcarpet-01">Devcarpet Jekyll Theme</a>.
 ```
 
-## Roadmap
+## Features / Roadmap
 
 * [x] Social links
 * [x] Custom navbar description
-* [ ] Custom navbar links
+* [x] Hero Banner
+* [x] Custom navbar links
 * [ ] Sass for Bootstrap 5 - more customization
 * [ ] Modal images (perhaps filter?)
 * [ ] Support for Strapi 4
 * [ ] Support for Strapi 4 - Modal Images using thumbs from Json
 * [ ] About page
-* [x] Hero Banner
+* [ ] Portfolio page
 
 ## Contributing
 

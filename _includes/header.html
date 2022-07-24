@@ -9,9 +9,11 @@
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Follow on Twitter</a></li>
-              <li><a href="#" class="text-white">Like on Facebook</a></li>
-              <li><a href="#" class="text-white">Email me</a></li>
+              {%- assign social = site.devcarpet_theme.social_links -%}
+              {%- if social.twitter -%}<li><a href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" class="text-white">Follow on Twitter</a></li>{%- endif -%}
+              {%- if social.facebook -%}<li><a href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" class="text-white">Like on Facebook</a></li>{%- endif -%}
+              {%- if social.github -%}<li><a href="https://github.com/{{ social.github | cgi_escape | escape }}" class="text-white">Like on Github</a></li>{%- endif -%}
+              <!-- {%- if site.email -%}<li><a href="#" class="text-white">Email me</a></li>{%- endif -%} -->
             </ul>
           </div>
         </div>
